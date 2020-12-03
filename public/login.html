@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>login</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="" />
+
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/login.js"></script>
+  </head>
+  <style>
+    .a {
+      margin-left: 35%;
+    }
+  </style>
+
+  <body>
+    <div class="container">
+      <!-- <div class="row centered-form">
+        <div
+          class="col-xs-12 col-sm-8 col-md-4 col-sm-offset-2 col-md-offset-4 a justify-content-center align-items-center"
+        >
+          <div class="panel panel-default">
+            <div class="panel-heading">
+            </div>
+            
+          </div>
+        </div>
+      </div> -->
+    </div>
+    <div id="login">
+      <br />
+      <div class="container">
+        <div
+          id="login-row"
+          class="row justify-content-center align-items-center"
+        >
+          <div id="login-column" class="col-md-6">
+            <div id="login-box" class="col-md-12">
+              <form id="login-form" class="form" action="/login" method="POST">
+                <h3 class="text-center text-info">Login</h3>
+                <div class="form-group">
+                  <label for="username" class="text-info">Email Address:</label
+                  ><br />
+                  <input
+                    type="email"
+                    name="email"
+                    id="email"
+                    class="form-control"
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="password" class="text-info">Password:</label
+                  ><br />
+                  <input
+                    type="password"
+                    name="password"
+                    id="password"
+                    class="form-control"
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="remember-me" class="text-info"
+                    ><span>Remember me</span> <span
+                      ><input
+                        id="remember"
+                        name="remember"
+                        type="checkbox" /></span></label
+                  ><br />
+                  <input
+                    type="submit"
+                    name="submit"
+                    class="btn btn-info btn-md"
+                    value="submit"
+                  />
+                  <a
+                    type="button"
+                    class="btn btn-info"
+                    href="registeration.html"
+                  >
+                    New User? Register
+                  </a>
+                  <label for="cookies" class="text-info">
+                    <input
+                      id="cookies"
+                      name="cookies"
+                      type="checkbox"
+                      style="visibility: hidden; display: none"
+                  /></label>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- <nav class="navbar fixed-bottom navbar-light bg-light cookies-consent_bar">
+      <a class="navbar-brand" href="#"
+        >🍪 This website uses cookies to ensure you get the best experience on our
+      website.</a
+      >
+       <ul class="navbar-nav ml-auto "></ul>
+   
+     
+  
+    </nav> -->
+    <nav
+      class="navbar navbar-expand-sm fixed-bottom navbar-light bg-light cookies-consent_bar"
+    >
+      <a class="navbar-brand" href="#"
+        >🍪 This website uses cookies to ensure you get the best experience on
+        our website.</a
+      >
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item active">
+          <button type="button" class="btn btn-info" onclick="AcceptClicked()">
+            Accept
+          </button>
+          &nbsp
+        </li>
+        <li class="nav-item">
+          <button type="button" class="btn btn-info" onclick="DeclineClicked()">
+            Decline
+          </button>
+        </li>
+      </ul>
+    </nav>
+  </body>
+</html>

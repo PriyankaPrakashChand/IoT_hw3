@@ -1,0 +1,13 @@
+.circle {
+  background-color: rgba(97, 186, 245, 0.658);
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  left: 30%;
+}
+
+.angle {
+  transform: rotate(0deg);
+}
